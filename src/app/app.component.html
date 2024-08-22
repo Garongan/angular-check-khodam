@@ -1,16 +1,1 @@
-<main>
-  <h1>{{ title }}</h1>
-  <form [formGroup]="checkForm" (ngSubmit)="onSubmit()">
-    <div class="form-input-container">
-      <label for="name">Name: </label>
-      <input id="name" type="text" formControlName="name" autocomplete="off">
-    </div>
-    <div class="form-button-container">
-      <button type="submit" [disabled]="!checkForm.valid">Cek</button>
-      <button type="reset" (click)="onReset()">Hapus</button>
-    </div>
-  </form>
-  <p *ngIf="!isCheck">{{ checkForm.get('name')?.value }} khodam kamu adalah <b>{{ khodam.name }}</b></p>
-</main>
-
 <router-outlet/>

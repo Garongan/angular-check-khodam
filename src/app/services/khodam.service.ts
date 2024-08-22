@@ -1,12 +1,12 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {KhodamModel} from "../model/khodam-model";
+import {KhodamModel} from "../models/khodam-model";
 
 @Injectable({
   providedIn: 'root'
 })
-export class KhodamServiceService {
+export class KhodamService {
 
   private url: string = 'assets/list-khodam.json'
 

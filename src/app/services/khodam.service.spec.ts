@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { KhodamServiceService } from './khodam-service.service';
+import { KhodamService } from './khodam.service';
 
 describe('KhodamServiceService', () => {
-  let service: KhodamServiceService;
+  let service: KhodamService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(KhodamServiceService);
+    service = TestBed.inject(KhodamService);
   });
 
   it('should be created', () => {
